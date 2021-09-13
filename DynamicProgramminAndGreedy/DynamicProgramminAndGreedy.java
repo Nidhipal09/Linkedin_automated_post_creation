@@ -1,7 +1,7 @@
-package DyanamicProgramminAndGreedy;
+package DynamicProgramminAndGreedy;
 import java.util.Scanner;
 
-public class DyanamicProgramminAndGreedy{
+public class DynamicProgramminAndGreedy{
     public static void main(String[] args) throws Exception {
         Scanner sc=new Scanner(System.in); 
         int n=sc.nextInt();
@@ -283,7 +283,181 @@ public class DyanamicProgramminAndGreedy{
     }
 
 
-    
-    
+    public static int CountEncodings(String s){
+        int[] ans=new int[s.length()];
+        ans[0]=1;
+        
+        for(int i=1; i<ans.length; i++){
+            if(s.charAt(i-1)=='0' && s.charAt(i)=='0'){
+                return 0; 
+            }
+            
+            else if(s.charAt(i-1)=='0' && s.charAt(i)!='0'){
+                ans[i]=ans[i-1];
+            }
+            else if(s.charAt(i-1)!='0' && s.charAt(i)=='0'){
+                if(s.charAt(i-1)=='1' || s.charAt(i-1)=='2') ans[i]= (i==1? 1 : ans[i-2]);
+                else return 0;
+            }
+            
+            else if(s.charAt(i-1)!='0' && s.charAt(i)!='0'){
+                if(Integer.parseInt(s.substring(i-1,i+1)) <=  26) ans[i]=ans[i-1]+(i==1 ? 1 : ans[i-2]);
+                else ans[i]=ans[i-1];
+            }
+            
+        }
+        return ans[ans.length-1];
+      }
      
+
+    
+    public static int countABCss(String s){
+        int a=0, ab=0, abc=0;
+        
+        for(int i=0; i<s.length(); i++){
+            char ch=s.charAt(i);
+            
+            if(ch=='a'){
+              a = 2*a + 1;  
+            }else if(ch=='b'){
+              ab = 2*ab + a; 
+            }else if(ch=='c'){
+              abc = 2*abc + ab;   
+            }
+        }
+        
+        return abc;
+    }
+
+
+    public static int maxSumNonAdjElements(int[] arr){
+        int prevIn=arr[0], prevEx=0;
+        
+        for(int i=1; i<arr.length; i++){
+            int in = arr[i] + prevEx;
+            int ex = Math.max(prevIn, prevEx);
+            
+            prevIn=in;
+            prevEx=ex;
+        }
+        
+        return Math.max(prevIn, prevEx);
+    }
+
+
+    public static int paintHouse(int[][] arr){
+        int prevR=arr[0][0], prevB=arr[0][1], prevG=arr[0][2];
+        
+        for(int i=1; i<arr.length; i++){
+            int newR = arr[i][0] + Math.min(prevB, prevG);
+            int newB = arr[i][1] + Math.min(prevR, prevG);
+            int newG = arr[i][2] + Math.min(prevR, prevB);
+            
+            prevR=newR;
+            prevB=newB;
+            prevG=newG;
+            
+        }
+        
+        return Math.min(prevR, Math.min(prevB, prevG));
+    }
+
+
+    public static int paintHouseWithManyColors(int[][] arr, int n, int k){
+        int[][] ans = new int[n][k];
+        
+        for(int i=0; i<n; i++){ // houses
+            for(int j=0; j<k; j++){ // colors 
+              if(i==0) ans[0][j] = arr[0][j];
+              else{
+                int min=Integer.MAX_VALUE;
+                for(int c=0; c<k; c++){
+                    if(c!=j) min = Math.min(min, ans[i-1][c]);
+                }
+                ans[i][j] = arr[i][j] + min;  
+              }
+            }
+        }
+        
+        int min=Integer.MAX_VALUE;
+        for(int c=0; c<k; c++){
+            min = Math.min(min, ans[n-1][c]);
+        }
+        return min;
+    }
+
+
+    public static int paintFence(int n, int k){
+        int prevSame=k, prevDiff=k*(k-1), prevTotal=prevSame+prevDiff;
+        
+        for(int i=3; i<=n; i++){
+            int newSame = prevDiff;
+            int newDiff = prevTotal * (k-1);
+            
+            prevSame = newSame;
+            prevDiff = newDiff;
+            prevTotal = newSame+newDiff;
+        }
+        
+        return prevTotal;
+    }
+
+    public static int tilingWith21(int n){
+        int prevH=1, prevV=1, prevTotal=2;
+        
+        for(int i=3; i<=n; i++){
+            int newH = prevV;
+            int newV = prevTotal;
+            
+            prevH = newH;
+            prevV = newV;
+            prevTotal = newH+newV;
+        }
+        
+        return prevTotal;
+    }
+
+    public static int tilingWithM1(int n, int m){
+        int[] ans=new int[n+1];
+        
+        for(int i=1; i<=n; i++){
+            if(i<m) ans[i]=1;
+            else if(i==m) ans[i]=2;
+            else ans[i]=ans[i-1] + ans[i-m];
+        }
+        
+        return ans[n];
+    }
+    
+    
+    public static int friendsPairing(int n){
+        int[] ans=new int[n+1];
+        ans[1]=1;
+        ans[2]=2;
+       
+        for(int i=3; i<=n; i++){
+            ans[i] = ans[i-1] + (i-1)*ans[i-2];
+        }
+        
+        return ans[n];
+    }
+
+
+    public static long partitionKSubsets(int n, int k)   {
+        long[][] ans=new long[k+1][n+1];
+        
+        for(int i=1; i<=k; i++){
+           for(int j=1; j<=n; j++){
+
+               if(i==1) ans[i][j]=1;
+               else if(i==j) ans[i][j]=1;
+               else if(n>k) ans[i][j]= i*ans[i][j-1] + ans[i-1][j-1];
+               
+           }
+        }
+        
+        return ans[k][n];
+    }
+
+
 }
