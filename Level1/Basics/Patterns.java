@@ -1,4 +1,4 @@
-package Level1.Basics;
+package Basics;
 
 public class Patterns {
 

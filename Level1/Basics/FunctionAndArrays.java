@@ -1,4 +1,4 @@
-package Level1.Basics;
+package Basics;
 
 public class FunctionAndArrays {
     public static int getDigitFrequency(int n, int d) {
