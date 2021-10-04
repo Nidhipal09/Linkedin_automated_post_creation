@@ -823,13 +823,13 @@ public class HashmapAndHeap {
         int i = p.length();
         int count = 0;
 
-        String ans="";
+        String ans = "";
         while (i < s.length()) {
-            if (compare(pmap, smap)){
+            if (compare(pmap, smap)) {
                 count++;
-                ans += (i-p.length())+" ";
+                ans += (i - p.length()) + " ";
             }
-            char cha=s.charAt(i);    
+            char cha = s.charAt(i);
             smap.put(cha, smap.getOrDefault(cha, 0) + 1);
 
             char chr = s.charAt(i - p.length());
@@ -837,31 +837,32 @@ public class HashmapAndHeap {
                 smap.remove(chr);
             else
                 smap.put(chr, smap.get(chr) - 1);
-                
-            i++;    
+
+            i++;
 
         }
-        if (compare(pmap, smap)){
+        if (compare(pmap, smap)) {
             count++;
-            ans += (i-p.length())+" ";
+            ans += (i - p.length()) + " ";
         }
         System.out.println(count);
         System.out.println(ans);
     }
 
-    public static boolean compare(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2){
-        for(Character ch :map1.keySet()){
-           int freq=map1.get(ch);
-           if(!map2.containsKey(ch) || map2.get(ch)!=freq) return false;
+    public static boolean compare(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2) {
+        for (Character ch : map1.keySet()) {
+            int freq = map1.get(ch);
+            if (!map2.containsKey(ch) || map2.get(ch) != freq)
+                return false;
         }
         return true;
     }
 
-
     public static boolean areKAnagrams(String s1, String s2, int k) {
-        if(s1.length()!=s2.length()) return false;
+        if (s1.length() != s2.length())
+            return false;
 
-		HashMap<Character, Integer> map1 = new HashMap<>();
+        HashMap<Character, Integer> map1 = new HashMap<>();
 
         for (int i = 0; i < s1.length(); i++) {
             char ch = s1.charAt(i);
@@ -870,14 +871,16 @@ public class HashmapAndHeap {
 
         for (int i = 0; i < s2.length(); i++) {
             char ch = s2.charAt(i);
-            if(map1.containsKey(ch) && map1.get(ch)>0) map1.put(ch, map1.get(ch)-1);
+            if (map1.containsKey(ch) && map1.get(ch) > 0)
+                map1.put(ch, map1.get(ch) - 1);
         }
 
-        int count=0;
-        for(char ch:map1.keySet()) count += map1.get(ch);         
+        int count = 0;
+        for (char ch : map1.keySet())
+            count += map1.get(ch);
 
-		return count<=k;
-	}
+        return count <= k;
+    }
 
     public static int[] anagramMappings(int[] arr1, int[] arr2) {
         int n=arr1.length;
@@ -905,9 +908,625 @@ public class HashmapAndHeap {
 		return ans;
 	}
 
-    public static class Pair{
-       int idx;
-       ArrayList<Integer> al;
-       
+    public static class Pair {
+        int idx;
+        ArrayList<Integer> al;
+
     }
+
+    public static boolean validAnagrams(String s1, String s2) {
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < s1.length(); i++) {
+            char ch = s1.charAt(i);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
+        }
+
+        for (int i = 0; i < s2.length(); i++) {
+            char ch = s2.charAt(i);
+
+            if (!map.containsKey(ch))
+                return false;
+            if (map.get(ch) == 1)
+                map.remove(ch);
+            else
+                map.put(ch, map.get(ch) - 1);
+        }
+
+        if (map.size() == 0)
+            return true;
+        return false;
+    }
+
+    public static ArrayList<ArrayList<String>> groupAnagrams(String[] strs) {
+
+        HashMap<HashMap<Character, Integer>, ArrayList<String>> map = new HashMap<>();
+
+        for (String s : strs) {
+            HashMap<Character, Integer> amap = new HashMap<>();
+
+            for (int i = 0; i < s.length(); i++) {
+                char ch = s.charAt(i);
+                amap.put(ch, amap.getOrDefault(ch, 0) + 1);
+            }
+
+            if (map.containsKey(amap)) {
+                map.get(amap).add(s);
+            } else {
+                ArrayList<String> al = new ArrayList<>();
+                al.add(s);
+                map.put(amap, al);
+            }
+        }
+
+        ArrayList<ArrayList<String>> ans = new ArrayList<>();
+        for (ArrayList<String> a : map.values()) {
+            ans.add(a);
+        }
+
+        return ans;
+    }
+
+    public static ArrayList<ArrayList<String>> groupShiftedStrings(String[] strs) {
+
+        HashMap<String, ArrayList<String>> map = new HashMap<>();
+
+        for (String s : strs) {
+
+            String key = getKey(s);
+
+            if (map.containsKey(key)) {
+                map.get(key).add(s);
+            } else {
+                ArrayList<String> al = new ArrayList<>();
+                al.add(s);
+                map.put(key, al);
+            }
+        }
+
+        ArrayList<ArrayList<String>> ans = new ArrayList<>();
+        for (ArrayList<String> a : map.values()) {
+            ans.add(a);
+        }
+
+        return ans;
+    }
+
+    public static String getKey(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i < s.length(); i++) {
+            char ch1 = s.charAt(i);
+            char ch2 = s.charAt(i - 1);
+            int k = ch1 - ch2;
+            if (k < 0)
+                k += 26;
+            sb.append(k + "#"); // not k becoz 1#2 != 12
+        }
+
+        return sb.toString();
+    }
+
+    public static boolean isIsomorphic(String s1, String s2) {
+        if (s1.length() != s2.length())
+            return false;
+
+        HashMap<Character, Character> maps = new HashMap<>();
+        HashMap<Character, Boolean> mapb = new HashMap<>();
+
+        for (int i = 0; i < s1.length(); i++) {
+            char ch1 = s1.charAt(i);
+            char ch2 = s2.charAt(i);
+
+            if (!maps.containsKey(ch1)) {
+                if (mapb.containsKey(ch2))
+                    return false;
+
+                maps.put(ch1, ch2);
+                mapb.put(ch2, true);
+            } else {
+                if (maps.get(ch1) != ch2)
+                    return false;
+
+            }
+        }
+
+        return true;
+    }
+
+    public static boolean wordPattern(String pattern, String s) {
+
+        String[] words = s.split(" ");
+
+        if (pattern.length() != words.length)
+            return false;
+
+        HashMap<Character, String> maps = new HashMap<>();
+        HashMap<String, Boolean> mapb = new HashMap<>();
+
+        for (int i = 0; i < pattern.length(); i++) {
+            char ch = pattern.charAt(i);
+            String word = words[i];
+
+            if (!maps.containsKey(ch)) {
+                if (mapb.containsKey(word))
+                    return false;
+
+                maps.put(ch, word);
+                mapb.put(word, true);
+            } else {
+                if (!maps.get(ch).equals(word))
+                    return false;
+
+            }
+        }
+
+        return true;
+    }
+
+    public static int longestSubArrayWithSumDivisiblebyk(int[] arr, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int sum = 0, r = 0, maxlen = 0;
+        map.put(0, -1); // rem-index
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            sum += x;
+            int rem = sum % k;
+            if (rem < 0)
+                rem += k;
+
+            if (!map.containsKey(rem))
+                map.put(rem, i);
+            else {
+                int len = i - map.get(rem);
+                maxlen = Math.max(maxlen, len);
+            }
+
+        }
+
+        return maxlen;
+    }
+
+    public static int countSubarrayswithsumdivisiblebyk(int[] arr, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int sum = 0, r = 0, count = 0;
+        map.put(0, 1); // rem-count
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            sum += x;
+            int rem = sum % k;
+            if (rem < 0)
+                rem += k;
+
+            if (!map.containsKey(rem))
+                map.put(rem, 1);
+            else {
+                count += map.get(rem);
+                map.put(rem, map.get(rem) + 1);
+            }
+
+        }
+
+        return count;
+    }
+
+    public static int longestSubarrayWithEqualNoOf0and1(int[] arr) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int sum = 0, maxlen = 0;
+        map.put(0, -1); // sum-index
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            if (x == 0)
+                sum += -1;
+            else
+                sum += 1;
+
+            if (!map.containsKey(sum))
+                map.put(sum, i);
+            else {
+                int len = i - map.get(sum);
+                maxlen = Math.max(maxlen, len);
+            }
+
+        }
+
+        return maxlen;
+
+    }
+
+    public static int countOfSubarraysWithEqualNoOf0and1(int[] arr) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        int sum = 0, count = 0;
+        map.put(0, 1); // sum-count
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            if (x == 0)
+                sum += -1;
+            else
+                sum += 1;
+
+            if (!map.containsKey(sum))
+                map.put(sum, 1);
+            else {
+                count += map.get(sum);
+                map.put(sum, map.get(sum) + 1);
+            }
+
+        }
+
+        return count;
+    }
+
+    public static int longestSubarrayWithEqualNoOf01ans2(int[] arr) {
+
+        int count0 = 0, count1 = 0, count2 = 0, maxlen = 0;
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        map.put("0#0", -1); // count1-count0 # count2-count1,index
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            if (x == 0)
+                count0 += 1;
+            else if (x == 1)
+                count1 += 1;
+            else
+                count2 += 1;
+
+            int d1 = count1 - count0, d2 = count2 - count1;
+
+            String key = "" + d1 + "#" + d2;
+
+            if (!map.containsKey(key))
+                map.put(key, i);
+            else {
+                int len = i - map.get(key);
+                maxlen = Math.max(maxlen, len);
+            }
+
+        }
+
+        return maxlen;
+    }
+
+    public static int countOfSubarraysWithEqualNoOf01and2(int[] arr) {
+        int count0 = 0, count1 = 0, count2 = 0, count = 0;
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        map.put("0#0", 1); // count1-count0 # count2-count1,index
+
+        for (int i = 0; i < arr.length; i++) {
+            int x = arr[i];
+
+            if (x == 0)
+                count0 += 1;
+            else if (x == 1)
+                count1 += 1;
+            else
+                count2 += 1;
+
+            int d1 = count1 - count0, d2 = count2 - count1;
+
+            String key = "" + d1 + "#" + d2;
+
+            if (!map.containsKey(key))
+                map.put(key, 1);
+            else {
+                count += map.get(key);
+                map.put(key, map.get(key) + 1);
+            }
+
+        }
+
+        return count;
+    }
+
+    public static boolean pairsWithEqualSum(int[] arr) {
+
+        int sum = 0;
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                sum = arr[i] + arr[j];
+                if (set.contains(sum))
+                    return true;
+                else
+                    set.add(sum);
+            }
+        }
+
+        return false;
+    }
+
+    //practice
+    public static boolean pairWithtarSum(int[] arr, int tar) {
+  
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+           
+            if (set.contains(tar - arr[i]))
+                return true;
+            else
+                set.add(arr[i]);
+           
+        }
+
+        return false;
+    }
+
+    public static String numanddeno(int num, int den) {
+        StringBuilder ans = new StringBuilder();
+        HashMap<Integer, Integer> map = new HashMap<>();
+         // rem, index
+        int flag=0;
+        
+        while(true){
+            
+            int rem = num % den;
+            int div = num / den;
+            
+            if(rem==0){
+                ans.append(div);
+                break;
+            } 
+            else{
+                if(flag == 1){
+                    if(map.containsKey(rem)){
+                        ans.append(")");
+                        int index = map.get(rem);
+                        ans.insert(index, "(");
+                        break;
+                    }
+                    map.put(rem, ans.length());
+                }
+                ans.append(div);
+                
+                
+                if(flag==0){
+                  ans.append(".");
+                  flag = 1;
+                }
+                num = rem;
+                num *= 10;
+            }
+        }
+        
+        return ans.toString();
+    }
+
+    public static String numanddeno1(int num, int den) {
+        StringBuilder ans = new StringBuilder();
+        
+        int rem = num % den;
+        int q = num / den;
+        ans.append(q);
+        
+        if(rem!=0){
+            ans.append(".");
+            
+            HashMap<Integer, Integer> map = new HashMap<>(); // rem, index
+            
+            while(rem!=0){
+                if(map.containsKey(rem)){
+                    int index = map.get(rem);
+                    ans.insert(index, "(");
+                    ans.append(")");
+                    break;
+                }
+                else{
+                   map.put(rem, ans.length());
+                   rem *= 10;
+                   q = rem / den;
+                   rem = rem % den;
+                   ans.append(q);
+                }
+            }
+        }
+        
+        return ans.toString();
+    }
+    
+    public static int rabbits(int[] arr) {
+        int count = 0;
+        
+         HashMap<Integer, Integer> map = new HashMap<>(); 
+        for(int i=0; i<arr.length; i++){
+            int x = arr[i], y=x+1;
+            
+            if(map.containsKey(y)){
+                int value=map.get(y);
+                if(value == y){
+                    map.remove(y);
+                    map.put(y,1);
+                    count += y;
+                }
+                else map.put(y,map.get(y)+1);
+            }
+            else{
+                map.put(y, 1);
+            }
+        }
+        
+        for(int key :map.keySet()){
+            count += key;
+        }
+        return count;
+    }
+
+    public static int rabbits1(int[] arr) {
+        int count = 0;
+        
+        HashMap<Integer, Integer> map = new HashMap<>(); 
+        for(int i=0; i<arr.length; i++){
+            int x = arr[i];
+            map.put(x, map.getOrDefault(x,0)+1);
+        }
+        
+        for(int key :map.keySet()){
+            int gs = key+1;  // group size
+            int reportees = map.get(key);
+            int ng = (int)Math.ceil(reportees*1.0/gs*1.0); // no of groups
+            count += ng * gs;
+        }
+        
+        return count;
+    }
+
+    public static boolean arithmeticExpression(int[] arr) {
+        
+        if(arr.length == 1) return true;
+        
+        HashSet<Integer> set = new HashSet<>();                 
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        
+        for(int x: arr){
+           if(x < min) min=x;
+           if(x > max) max=x;
+           
+           set.add(x);
+        }
+        
+        int d = (max-min)/(arr.length-1);
+        
+        for(int i=0; i<arr.length; i++){
+            int val = min + i*d;
+            if(!set.contains(val)) return false;
+        }
+        
+        return true;
+    }
+
+    public static void smallestSubarrayWithHFE(int[] arr) {
+        
+        HashMap<Integer, Integer> fmap = new HashMap<>();  // freq
+        HashMap<Integer, Integer> fomap = new HashMap<>();  // first occurrence
+        
+        int hf=0, ei=0, si=0, len=1;
+        
+        for(int i=0; i<arr.length; i++){
+            int x = arr[i];
+            
+            if(fmap.containsKey(x)){
+                fmap.put(x, fmap.get(x)+1);
+            }
+            else{
+                fmap.put(x,1);
+                fomap.put(x,i);
+            }
+            
+            if(fmap.get(x) > hf){
+                hf = fmap.get(x);
+                si = fomap.get(x);
+                ei = i;
+                len = ei-si+1;
+            }
+            else if(fmap.get(x) == hf){
+                int length = i-fomap.get(x)+1;
+                if(length<len){
+                    hf = fmap.get(x);
+                    si = fomap.get(x);
+                    ei = i;
+                    len = ei-si+1;
+                }
+            }
+            
+        }
+        
+        System.out.println(arr[si]);
+        System.out.println(si);
+        System.out.println(ei);
+    }
+
+    public static void completeTask(int n, int m, int[] arr) {
+		
+		HashSet<Integer> set = new HashSet<>();
+		ArrayList<Integer> set1 = new ArrayList<>();
+		ArrayList<Integer> set2 = new ArrayList<>();
+		
+		for(int x:arr) set.add(x);
+		
+		boolean flag=true;
+		
+		for(int i=1; i<=n; i++){
+		    if(!set.contains(i)){
+		        if(flag){
+		          set1.add(i);
+		        } 
+		        else{
+		            set2.add(i);
+		        }
+                flag = !flag;
+		    }
+		}
+		
+		for(int x:set1) System.out.print(x+" ");
+		System.out.println();
+		for(int x:set2) System.out.print(x+" ");
+
+	}
+
+    public static int PairsWithGivenSumInTwoSortedMatrices(int[][] num1, int[][] num2, int k) {
+		int count =0;
+		HashMap<Integer, Integer> map = new HashMap<>();
+		
+		for(int i=0; i<num1.length; i++){
+		   for(int j=0; j<num1.length; j++){
+		      map.put(num1[i][j], map.getOrDefault(num1[i][j],0)+1);
+		   } 
+		}
+		
+		for(int i=0; i<num2.length; i++){
+		   for(int j=0; j<num2.length; j++){
+		      int comp = k - num2[i][j];
+		      
+		      if(map.containsKey(comp)){
+		        count += map.get(comp);    
+		      }
+		   } 
+		}
+		
+
+		return count;
+	}
+    
+    public static int firstnonrepeatingChar(String s) {
+		HashMap<Character, Integer> map = new HashMap<>();
+		
+		for(int i=0; i<s.length(); i++){
+		      char ch = s.charAt(i);
+		      map.put(ch, map.getOrDefault(ch,0)+1);
+		   
+		}
+		
+		for(int i=0; i<s.length(); i++){
+		   char ch = s.charAt(i);
+		   int freq = map.get(ch);
+		   if(freq == 1) return i;
+		}
+		
+
+		return -1;
+	 }
+
+     
+
+
+
 }
