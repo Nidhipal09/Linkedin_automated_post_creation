@@ -47,34 +47,31 @@ let info = JSON.parse(infoJson);
     await page.goto(args.url);
 
     await page.waitForSelector("a[data-event-action='Login']");
-    await page.click("a[data-event-action='Login']");
+    await page.click("a[data-event-action='Login']");   // first login
 
     await page.waitForSelector("a[href='https://www.hackerrank.com/login']");
-    await page.click("a[href='https://www.hackerrank.com/login']");
+    await page.click("a[href='https://www.hackerrank.com/login']");   // second login
 
     await page.waitForSelector("input[name='username']");
-    await page.type("input[name='username']", info.username, {delay : 30});
+    await page.type("input[name='username']", info.username, {delay : 30});   // login details
 
     await page.waitForSelector("input[name='password']");
     await page.type("input[name='password']", info.password, {delay : 30});
 
-    await page.waitForSelector("button[data-analytics='LoginPassword']");
+    await page.waitForSelector("button[data-analytics='LoginPassword']");  // click on login button
     await page.click("button[data-analytics='LoginPassword']");
 
     await page.waitForSelector("div.skill-progress-card span.ui-text");
-    await page.click("div.skill-progress-card span.ui-text");
+    await page.click("div.skill-progress-card span.ui-text");   // problem solving
 
     await page.waitForSelector("div.challenge-submit-btn span.ui-text");
-    await page.click("div.challenge-submit-btn span.ui-text");
-
-    await page.waitForSelector("div.challenges-list span.ui-text");
-    await page.click("div.challenges-list span.ui-text");
+    await page.click("div.challenge-submit-btn span.ui-text");  // click on solve challenge button
 
     await page.waitForSelector("div.css-y9fljz-control > div.css-1hwfws3");
-    await page.click("div.css-y9fljz-control > div.css-1hwfws3");
+    await page.click("div.css-y9fljz-control > div.css-1hwfws3");  //   click on language selection
     
     await page.waitForSelector("div.css-1j2eamm input#select-language-input");
-    await page.type("div.css-1j2eamm input#select-language-input", "java 8");
+    await page.type("div.css-1j2eamm input#select-language-input", "java 8");  // selection of java 8 
 
     await page.keyboard.press('Enter');
     
@@ -83,7 +80,7 @@ let info = JSON.parse(infoJson);
       
     }); 
 
-    await browserPromise.close();
+    // await browserPromise.close();
   }
 
   init();
