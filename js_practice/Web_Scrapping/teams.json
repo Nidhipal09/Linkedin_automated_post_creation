@@ -1,0 +1,622 @@
+[
+    {
+        "name": "New Zealand",
+        "matches": [
+            {
+                "opponent": "Australia",
+                "selfScore": "172/4",
+                "opponentScore": "173/2",
+                "result": "Australia won by 8 wickets (with 7 balls remaining)"
+            },
+            {
+                "opponent": "England",
+                "selfScore": "167/5",
+                "opponentScore": "166/4",
+                "result": "New Zealand won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "Afghanistan",
+                "selfScore": "125/2",
+                "opponentScore": "124/8",
+                "result": "New Zealand won by 8 wickets (with 11 balls remaining)"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "163/4",
+                "opponentScore": "111/7",
+                "result": "New Zealand won by 52 runs"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "172/5",
+                "opponentScore": "156/5",
+                "result": "New Zealand won by 16 runs"
+            },
+            {
+                "opponent": "India",
+                "selfScore": "111/2",
+                "opponentScore": "110/7",
+                "result": "New Zealand won by 8 wickets (with 33 balls remaining)"
+            },
+            {
+                "opponent": "Pakistan",
+                "selfScore": "134/8",
+                "opponentScore": "135/5",
+                "result": "Pakistan won by 5 wickets (with 8 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Australia",
+        "matches": [
+            {
+                "opponent": "New Zealand",
+                "selfScore": "173/2",
+                "opponentScore": "172/4",
+                "result": "Australia won by 8 wickets (with 7 balls remaining)"
+            },
+            {
+                "opponent": "Pakistan",
+                "selfScore": "177/5",
+                "opponentScore": "176/4",
+                "result": "Australia won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "West Indies",
+                "selfScore": "161/2",
+                "opponentScore": "157/7",
+                "result": "Australia won by 8 wickets (with 22 balls remaining)"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "78/2",
+                "opponentScore": "73",
+                "result": "Australia won by 8 wickets (with 82 balls remaining)"
+            },
+            {
+                "opponent": "England",
+                "selfScore": "125",
+                "opponentScore": "126/2",
+                "result": "England won by 8 wickets (with 50 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "155/3",
+                "opponentScore": "154/6",
+                "result": "Australia won by 7 wickets (with 18 balls remaining)"
+            },
+            {
+                "opponent": "South Africa",
+                "selfScore": "121/5",
+                "opponentScore": "118/9",
+                "result": "Australia won by 5 wickets (with 2 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Pakistan",
+        "matches": [
+            {
+                "opponent": "Australia",
+                "selfScore": "176/4",
+                "opponentScore": "177/5",
+                "result": "Australia won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "189/4",
+                "opponentScore": "117/6",
+                "result": "Pakistan won by 72 runs"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "189/2",
+                "opponentScore": "144/5",
+                "result": "Pakistan won by 45 runs"
+            },
+            {
+                "opponent": "Afghanistan",
+                "selfScore": "148/5",
+                "opponentScore": "147/6",
+                "result": "Pakistan won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "New Zealand",
+                "selfScore": "135/5",
+                "opponentScore": "134/8",
+                "result": "Pakistan won by 5 wickets (with 8 balls remaining)"
+            },
+            {
+                "opponent": "India",
+                "selfScore": "152/0",
+                "opponentScore": "151/7",
+                "result": "Pakistan won by 10 wickets (with 13 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "England",
+        "matches": [
+            {
+                "opponent": "New Zealand",
+                "selfScore": "166/4",
+                "opponentScore": "167/5",
+                "result": "New Zealand won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "South Africa",
+                "selfScore": "179/8",
+                "opponentScore": "189/2",
+                "result": "South Africa won by 10 runs"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "163/4",
+                "opponentScore": "137",
+                "result": "England won by 26 runs"
+            },
+            {
+                "opponent": "Australia",
+                "selfScore": "126/2",
+                "opponentScore": "125",
+                "result": "England won by 8 wickets (with 50 balls remaining)"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "126/2",
+                "opponentScore": "124/9",
+                "result": "England won by 8 wickets (with 35 balls remaining)"
+            },
+            {
+                "opponent": "West Indies",
+                "selfScore": "56/4",
+                "opponentScore": "55",
+                "result": "England won by 6 wickets (with 70 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Namibia",
+        "matches": [
+            {
+                "opponent": "India",
+                "selfScore": "132/8",
+                "opponentScore": "136/1",
+                "result": "India won by 9 wickets (with 28 balls remaining)"
+            },
+            {
+                "opponent": "New Zealand",
+                "selfScore": "111/7",
+                "opponentScore": "163/4",
+                "result": "New Zealand won by 52 runs"
+            },
+            {
+                "opponent": "Pakistan",
+                "selfScore": "144/5",
+                "opponentScore": "189/2",
+                "result": "Pakistan won by 45 runs"
+            },
+            {
+                "opponent": "Afghanistan",
+                "selfScore": "98/9",
+                "opponentScore": "160/5",
+                "result": "Afghanistan won by 62 runs"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "115/6",
+                "opponentScore": "109/8",
+                "result": "Namibia won by 4 wickets (with 5 balls remaining)"
+            },
+            {
+                "opponent": "Ireland",
+                "selfScore": "126/2",
+                "opponentScore": "125/8",
+                "result": "Namibia won by 8 wickets (with 9 balls remaining)"
+            },
+            {
+                "opponent": "Netherlands",
+                "selfScore": "166/4",
+                "opponentScore": "164/4",
+                "result": "Namibia won by 6 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "96",
+                "opponentScore": "100/3",
+                "result": "Sri Lanka won by 7 wickets (with 39 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "India",
+        "matches": [
+            {
+                "opponent": "Namibia",
+                "selfScore": "136/1",
+                "opponentScore": "132/8",
+                "result": "India won by 9 wickets (with 28 balls remaining)"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "89/2",
+                "opponentScore": "85",
+                "result": "India won by 8 wickets (with 81 balls remaining)"
+            },
+            {
+                "opponent": "Afghanistan",
+                "selfScore": "210/2",
+                "opponentScore": "144/7",
+                "result": "India won by 66 runs"
+            },
+            {
+                "opponent": "New Zealand",
+                "selfScore": "110/7",
+                "opponentScore": "111/2",
+                "result": "New Zealand won by 8 wickets (with 33 balls remaining)"
+            },
+            {
+                "opponent": "Pakistan",
+                "selfScore": "151/7",
+                "opponentScore": "152/0",
+                "result": "Pakistan won by 10 wickets (with 13 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Scotland",
+        "matches": [
+            {
+                "opponent": "Pakistan",
+                "selfScore": "117/6",
+                "opponentScore": "189/4",
+                "result": "Pakistan won by 72 runs"
+            },
+            {
+                "opponent": "India",
+                "selfScore": "85",
+                "opponentScore": "89/2",
+                "result": "India won by 8 wickets (with 81 balls remaining)"
+            },
+            {
+                "opponent": "New Zealand",
+                "selfScore": "156/5",
+                "opponentScore": "172/5",
+                "result": "New Zealand won by 16 runs"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "109/8",
+                "opponentScore": "115/6",
+                "result": "Namibia won by 4 wickets (with 5 balls remaining)"
+            },
+            {
+                "opponent": "Afghanistan",
+                "selfScore": "60",
+                "opponentScore": "190/4",
+                "result": "Afghanistan won by 130 runs"
+            },
+            {
+                "opponent": "Oman",
+                "selfScore": "123/2",
+                "opponentScore": "122",
+                "result": "Scotland won by 8 wickets (with 18 balls remaining)"
+            },
+            {
+                "opponent": "Papua New Guinea",
+                "selfScore": "165/9",
+                "opponentScore": "148",
+                "result": "Scotland won by 17 runs"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "140/9",
+                "opponentScore": "134/7",
+                "result": "Scotland won by 6 runs"
+            }
+        ]
+    },
+    {
+        "name": "Afghanistan",
+        "matches": [
+            {
+                "opponent": "New Zealand",
+                "selfScore": "124/8",
+                "opponentScore": "125/2",
+                "result": "New Zealand won by 8 wickets (with 11 balls remaining)"
+            },
+            {
+                "opponent": "India",
+                "selfScore": "144/7",
+                "opponentScore": "210/2",
+                "result": "India won by 66 runs"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "160/5",
+                "opponentScore": "98/9",
+                "result": "Afghanistan won by 62 runs"
+            },
+            {
+                "opponent": "Pakistan",
+                "selfScore": "147/6",
+                "opponentScore": "148/5",
+                "result": "Pakistan won by 5 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "190/4",
+                "opponentScore": "60",
+                "result": "Afghanistan won by 130 runs"
+            }
+        ]
+    },
+    {
+        "name": "South Africa",
+        "matches": [
+            {
+                "opponent": "England",
+                "selfScore": "189/2",
+                "opponentScore": "179/8",
+                "result": "South Africa won by 10 runs"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "86/4",
+                "opponentScore": "84",
+                "result": "South Africa won by 6 wickets (with 39 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "146/6",
+                "opponentScore": "142",
+                "result": "South Africa won by 4 wickets (with 1 ball remaining)"
+            },
+            {
+                "opponent": "West Indies",
+                "selfScore": "144/2",
+                "opponentScore": "143/8",
+                "result": "South Africa won by 8 wickets (with 10 balls remaining)"
+            },
+            {
+                "opponent": "Australia",
+                "selfScore": "118/9",
+                "opponentScore": "121/5",
+                "result": "Australia won by 5 wickets (with 2 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "West Indies",
+        "matches": [
+            {
+                "opponent": "Australia",
+                "selfScore": "157/7",
+                "opponentScore": "161/2",
+                "result": "Australia won by 8 wickets (with 22 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "169/8",
+                "opponentScore": "189/3",
+                "result": "Sri Lanka won by 20 runs"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "142/7",
+                "opponentScore": "139/5",
+                "result": "West Indies won by 3 runs"
+            },
+            {
+                "opponent": "South Africa",
+                "selfScore": "143/8",
+                "opponentScore": "144/2",
+                "result": "South Africa won by 8 wickets (with 10 balls remaining)"
+            },
+            {
+                "opponent": "England",
+                "selfScore": "55",
+                "opponentScore": "56/4",
+                "result": "England won by 6 wickets (with 70 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Sri Lanka",
+        "matches": [
+            {
+                "opponent": "West Indies",
+                "selfScore": "189/3",
+                "opponentScore": "169/8",
+                "result": "Sri Lanka won by 20 runs"
+            },
+            {
+                "opponent": "England",
+                "selfScore": "137",
+                "opponentScore": "163/4",
+                "result": "England won by 26 runs"
+            },
+            {
+                "opponent": "South Africa",
+                "selfScore": "142",
+                "opponentScore": "146/6",
+                "result": "South Africa won by 4 wickets (with 1 ball remaining)"
+            },
+            {
+                "opponent": "Australia",
+                "selfScore": "154/6",
+                "opponentScore": "155/3",
+                "result": "Australia won by 7 wickets (with 18 balls remaining)"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "172/5",
+                "opponentScore": "171/4",
+                "result": "Sri Lanka won by 5 wickets (with 7 balls remaining)"
+            },
+            {
+                "opponent": "Netherlands",
+                "selfScore": "45/2",
+                "opponentScore": "44",
+                "result": "Sri Lanka won by 8 wickets (with 77 balls remaining)"
+            },
+            {
+                "opponent": "Ireland",
+                "selfScore": "171/7",
+                "opponentScore": "101",
+                "result": "Sri Lanka won by 70 runs"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "100/3",
+                "opponentScore": "96",
+                "result": "Sri Lanka won by 7 wickets (with 39 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Bangladesh",
+        "matches": [
+            {
+                "opponent": "Australia",
+                "selfScore": "73",
+                "opponentScore": "78/2",
+                "result": "Australia won by 8 wickets (with 82 balls remaining)"
+            },
+            {
+                "opponent": "South Africa",
+                "selfScore": "84",
+                "opponentScore": "86/4",
+                "result": "South Africa won by 6 wickets (with 39 balls remaining)"
+            },
+            {
+                "opponent": "West Indies",
+                "selfScore": "139/5",
+                "opponentScore": "142/7",
+                "result": "West Indies won by 3 runs"
+            },
+            {
+                "opponent": "England",
+                "selfScore": "124/9",
+                "opponentScore": "126/2",
+                "result": "England won by 8 wickets (with 35 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "171/4",
+                "opponentScore": "172/5",
+                "result": "Sri Lanka won by 5 wickets (with 7 balls remaining)"
+            },
+            {
+                "opponent": "Papua New Guinea",
+                "selfScore": "181/7",
+                "opponentScore": "97",
+                "result": "Bangladesh won by 84 runs"
+            },
+            {
+                "opponent": "Oman",
+                "selfScore": "153",
+                "opponentScore": "127/9",
+                "result": "Bangladesh won by 26 runs"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "134/7",
+                "opponentScore": "140/9",
+                "result": "Scotland won by 6 runs"
+            }
+        ]
+    },
+    {
+        "name": "Netherlands",
+        "matches": [
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "44",
+                "opponentScore": "45/2",
+                "result": "Sri Lanka won by 8 wickets (with 77 balls remaining)"
+            },
+            {
+                "opponent": "Namibia",
+                "selfScore": "164/4",
+                "opponentScore": "166/4",
+                "result": "Namibia won by 6 wickets (with 6 balls remaining)"
+            },
+            {
+                "opponent": "Ireland",
+                "selfScore": "106",
+                "opponentScore": "107/3",
+                "result": "Ireland won by 7 wickets (with 29 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Ireland",
+        "matches": [
+            {
+                "opponent": "Namibia",
+                "selfScore": "125/8",
+                "opponentScore": "126/2",
+                "result": "Namibia won by 8 wickets (with 9 balls remaining)"
+            },
+            {
+                "opponent": "Sri Lanka",
+                "selfScore": "101",
+                "opponentScore": "171/7",
+                "result": "Sri Lanka won by 70 runs"
+            },
+            {
+                "opponent": "Netherlands",
+                "selfScore": "107/3",
+                "opponentScore": "106",
+                "result": "Ireland won by 7 wickets (with 29 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Oman",
+        "matches": [
+            {
+                "opponent": "Scotland",
+                "selfScore": "122",
+                "opponentScore": "123/2",
+                "result": "Scotland won by 8 wickets (with 18 balls remaining)"
+            },
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "127/9",
+                "opponentScore": "153",
+                "result": "Bangladesh won by 26 runs"
+            },
+            {
+                "opponent": "Papua New Guinea",
+                "selfScore": "131/0",
+                "opponentScore": "129/9",
+                "result": "Oman won by 10 wickets (with 38 balls remaining)"
+            }
+        ]
+    },
+    {
+        "name": "Papua New Guinea",
+        "matches": [
+            {
+                "opponent": "Bangladesh",
+                "selfScore": "97",
+                "opponentScore": "181/7",
+                "result": "Bangladesh won by 84 runs"
+            },
+            {
+                "opponent": "Scotland",
+                "selfScore": "148",
+                "opponentScore": "165/9",
+                "result": "Scotland won by 17 runs"
+            },
+            {
+                "opponent": "Oman",
+                "selfScore": "129/9",
+                "opponentScore": "131/0",
+                "result": "Oman won by 10 wickets (with 38 balls remaining)"
+            }
+        ]
+    }
+]
