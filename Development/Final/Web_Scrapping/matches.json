@@ -1,0 +1,317 @@
+[
+    {
+        "t1": "New Zealand",
+        "t2": "Australia",
+        "t1s": "172/4",
+        "t2s": "173/2",
+        "result": "Australia won by 8 wickets (with 7 balls remaining)"
+    },
+    {
+        "t1": "Pakistan",
+        "t2": "Australia",
+        "t1s": "176/4",
+        "t2s": "177/5",
+        "result": "Australia won by 5 wickets (with 6 balls remaining)"
+    },
+    {
+        "t1": "England",
+        "t2": "New Zealand",
+        "t1s": "166/4",
+        "t2s": "167/5",
+        "result": "New Zealand won by 5 wickets (with 6 balls remaining)"
+    },
+    {
+        "t1": "Namibia",
+        "t2": "India",
+        "t1s": "132/8",
+        "t2s": "136/1",
+        "result": "India won by 9 wickets (with 28 balls remaining)"
+    },
+    {
+        "t1": "Pakistan",
+        "t2": "Scotland",
+        "t1s": "189/4",
+        "t2s": "117/6",
+        "result": "Pakistan won by 72 runs"
+    },
+    {
+        "t1": "Afghanistan",
+        "t2": "New Zealand",
+        "t1s": "124/8",
+        "t2s": "125/2",
+        "result": "New Zealand won by 8 wickets (with 11 balls remaining)"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "England",
+        "t1s": "189/2",
+        "t2s": "179/8",
+        "result": "South Africa won by 10 runs"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "Australia",
+        "t1s": "157/7",
+        "t2s": "161/2",
+        "result": "Australia won by 8 wickets (with 22 balls remaining)"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "India",
+        "t1s": "85",
+        "t2s": "89/2",
+        "result": "India won by 8 wickets (with 81 balls remaining)"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Namibia",
+        "t1s": "163/4",
+        "t2s": "111/7",
+        "result": "New Zealand won by 52 runs"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "West Indies",
+        "t1s": "189/3",
+        "t2s": "169/8",
+        "result": "Sri Lanka won by 20 runs"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "Australia",
+        "t1s": "73",
+        "t2s": "78/2",
+        "result": "Australia won by 8 wickets (with 82 balls remaining)"
+    },
+    {
+        "t1": "India",
+        "t2": "Afghanistan",
+        "t1s": "210/2",
+        "t2s": "144/7",
+        "result": "India won by 66 runs"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Scotland",
+        "t1s": "172/5",
+        "t2s": "156/5",
+        "result": "New Zealand won by 16 runs"
+    },
+    {
+        "t1": "Pakistan",
+        "t2": "Namibia",
+        "t1s": "189/2",
+        "t2s": "144/5",
+        "result": "Pakistan won by 45 runs"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "South Africa",
+        "t1s": "84",
+        "t2s": "86/4",
+        "result": "South Africa won by 6 wickets (with 39 balls remaining)"
+    },
+    {
+        "t1": "England",
+        "t2": "Sri Lanka",
+        "t1s": "163/4",
+        "t2s": "137",
+        "result": "England won by 26 runs"
+    },
+    {
+        "t1": "India",
+        "t2": "New Zealand",
+        "t1s": "110/7",
+        "t2s": "111/2",
+        "result": "New Zealand won by 8 wickets (with 33 balls remaining)"
+    },
+    {
+        "t1": "Afghanistan",
+        "t2": "Namibia",
+        "t1s": "160/5",
+        "t2s": "98/9",
+        "result": "Afghanistan won by 62 runs"
+    },
+    {
+        "t1": "Australia",
+        "t2": "England",
+        "t1s": "125",
+        "t2s": "126/2",
+        "result": "England won by 8 wickets (with 50 balls remaining)"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "South Africa",
+        "t1s": "142",
+        "t2s": "146/6",
+        "result": "South Africa won by 4 wickets (with 1 ball remaining)"
+    },
+    {
+        "t1": "Afghanistan",
+        "t2": "Pakistan",
+        "t1s": "147/6",
+        "t2s": "148/5",
+        "result": "Pakistan won by 5 wickets (with 6 balls remaining)"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "Bangladesh",
+        "t1s": "142/7",
+        "t2s": "139/5",
+        "result": "West Indies won by 3 runs"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "Australia",
+        "t1s": "154/6",
+        "t2s": "155/3",
+        "result": "Australia won by 7 wickets (with 18 balls remaining)"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "Namibia",
+        "t1s": "109/8",
+        "t2s": "115/6",
+        "result": "Namibia won by 4 wickets (with 5 balls remaining)"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "England",
+        "t1s": "124/9",
+        "t2s": "126/2",
+        "result": "England won by 8 wickets (with 35 balls remaining)"
+    },
+    {
+        "t1": "New Zealand",
+        "t2": "Pakistan",
+        "t1s": "134/8",
+        "t2s": "135/5",
+        "result": "Pakistan won by 5 wickets (with 8 balls remaining)"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "South Africa",
+        "t1s": "143/8",
+        "t2s": "144/2",
+        "result": "South Africa won by 8 wickets (with 10 balls remaining)"
+    },
+    {
+        "t1": "Afghanistan",
+        "t2": "Scotland",
+        "t1s": "190/4",
+        "t2s": "60",
+        "result": "Afghanistan won by 130 runs"
+    },
+    {
+        "t1": "India",
+        "t2": "Pakistan",
+        "t1s": "151/7",
+        "t2s": "152/0",
+        "result": "Pakistan won by 10 wickets (with 13 balls remaining)"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "Sri Lanka",
+        "t1s": "171/4",
+        "t2s": "172/5",
+        "result": "Sri Lanka won by 5 wickets (with 7 balls remaining)"
+    },
+    {
+        "t1": "West Indies",
+        "t2": "England",
+        "t1s": "55",
+        "t2s": "56/4",
+        "result": "England won by 6 wickets (with 70 balls remaining)"
+    },
+    {
+        "t1": "South Africa",
+        "t2": "Australia",
+        "t1s": "118/9",
+        "t2s": "121/5",
+        "result": "Australia won by 5 wickets (with 2 balls remaining)"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Sri Lanka",
+        "t1s": "44",
+        "t2s": "45/2",
+        "result": "Sri Lanka won by 8 wickets (with 77 balls remaining)"
+    },
+    {
+        "t1": "Ireland",
+        "t2": "Namibia",
+        "t1s": "125/8",
+        "t2s": "126/2",
+        "result": "Namibia won by 8 wickets (with 9 balls remaining)"
+    },
+    {
+        "t1": "Oman",
+        "t2": "Scotland",
+        "t1s": "122",
+        "t2s": "123/2",
+        "result": "Scotland won by 8 wickets (with 18 balls remaining)"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "Papua New Guinea",
+        "t1s": "181/7",
+        "t2s": "97",
+        "result": "Bangladesh won by 84 runs"
+    },
+    {
+        "t1": "Sri Lanka",
+        "t2": "Ireland",
+        "t1s": "171/7",
+        "t2s": "101",
+        "result": "Sri Lanka won by 70 runs"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Namibia",
+        "t1s": "164/4",
+        "t2s": "166/4",
+        "result": "Namibia won by 6 wickets (with 6 balls remaining)"
+    },
+    {
+        "t1": "Bangladesh",
+        "t2": "Oman",
+        "t1s": "153",
+        "t2s": "127/9",
+        "result": "Bangladesh won by 26 runs"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "Papua New Guinea",
+        "t1s": "165/9",
+        "t2s": "148",
+        "result": "Scotland won by 17 runs"
+    },
+    {
+        "t1": "Namibia",
+        "t2": "Sri Lanka",
+        "t1s": "96",
+        "t2s": "100/3",
+        "result": "Sri Lanka won by 7 wickets (with 39 balls remaining)"
+    },
+    {
+        "t1": "Netherlands",
+        "t2": "Ireland",
+        "t1s": "106",
+        "t2s": "107/3",
+        "result": "Ireland won by 7 wickets (with 29 balls remaining)"
+    },
+    {
+        "t1": "Scotland",
+        "t2": "Bangladesh",
+        "t1s": "140/9",
+        "t2s": "134/7",
+        "result": "Scotland won by 6 runs"
+    },
+    {
+        "t1": "Papua New Guinea",
+        "t2": "Oman",
+        "t1s": "129/9",
+        "t2s": "131/0",
+        "result": "Oman won by 10 wickets (with 38 balls remaining)"
+    }
+]
